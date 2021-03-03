@@ -37,11 +37,11 @@ class Polaris:
         if("RMS" in line_buff):
             return 0
         if("Bx" in line_buff and "E" not in line_buff):
-            bx = line_buff[-9:-1]
+            bx = line_buff[-10:-1]
         if("By" in line_buff and "E" not in line_buff):
-            by = line_buff[-9:-1]
+            by = line_buff[-10:-1]
         if("Bz" in line_buff and "E" not in line_buff):
-            bz = line_buff[-9:-1]
+            bz = line_buff[-10:-1]
         if("Ez-Bx" in line_buff):
             line_buff = ""
             stop = 1
